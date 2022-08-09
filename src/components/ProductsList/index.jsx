@@ -1,7 +1,10 @@
 import { ProductsListContainer } from "./styles";
 import ProductCard from "../ProductCard";
+import { useProducts } from "../../contexts/products";
 
-const ProductsList = ({ products, edit = false }) => {
+const ProductsList = ({ edit = false }) => {
+  const { products } = useProducts();
+
   return (
     <ProductsListContainer>
       {products.map((element) => (

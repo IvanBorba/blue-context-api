@@ -1,11 +1,11 @@
 import { HomeContainer } from "./styles";
 import ProductsList from "../../components/ProductsList";
 
-const Home = ({ products }) => {
+const Home = () => {
   return (
     <HomeContainer>
       <h1>Home</h1>
-      <ProductsList products={products} />
+      <ProductsList />
     </HomeContainer>
   );
 };
